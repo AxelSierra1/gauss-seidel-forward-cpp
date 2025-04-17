@@ -89,13 +89,13 @@ int main(){
     
     // Read matrix A from file
     // Note: Assumes matrix is square, using n_ptr for both rows and columns
-    double** A = Read_Matrix("data/matriz.txt", n_ptr, n_ptr); 
+    double** A = Read_Matrix("data/matrix.txt", n_ptr, n_ptr); 
     
     // Read vector b from file
     double* b = Read_Vector("data/vector.txt", n_ptr);
 
     // Read initial guess vector x0 from file
-    double* x0 = Read_Vector("data/vec_inicial.txt", n_ptr);
+    double* x0 = Read_Vector("data/initial_vec.txt", n_ptr);
 
     // Check if reads were successful (basic check: n > 0)
     if (*n_ptr <= 0) {
